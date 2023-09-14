@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE5E8DBB2AB2D0220036C263 /* EmployeeFilterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E8DBA2AB2D0220036C263 /* EmployeeFilterSheet.swift */; };
+		AE5E8DBE2AB2F6BC0036C263 /* DateFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E8DBD2AB2F6BC0036C263 /* DateFieldComponent.swift */; };
+		AE5E8DC12AB2F77A0036C263 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E8DC02AB2F77A0036C263 /* StringExtension.swift */; };
+		AE5E8DC32AB2FBB50036C263 /* StaticImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E8DC22AB2FBB50036C263 /* StaticImage.swift */; };
+		AE5E8DC52AB2FC630036C263 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E8DC42AB2FC630036C263 /* ArrayExtension.swift */; };
+		AE5E8DC72AB3287C0036C263 /* SalariesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E8DC62AB3287C0036C263 /* SalariesResponse.swift */; };
+		AE5E8DCA2AB344F10036C263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5E8DC92AB344F10036C263 /* LaunchScreen.storyboard */; };
 		AEE519BA2AB1DE2D0013097B /* EMSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE519B92AB1DE2D0013097B /* EMSApp.swift */; };
 		AEE519BC2AB1DE2D0013097B /* EmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE519BB2AB1DE2D0013097B /* EmployeeView.swift */; };
 		AEE519BE2AB1DE2E0013097B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEE519BD2AB1DE2E0013097B /* Assets.xcassets */; };
@@ -27,6 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE5E8DBA2AB2D0220036C263 /* EmployeeFilterSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeFilterSheet.swift; sourceTree = "<group>"; };
+		AE5E8DBD2AB2F6BC0036C263 /* DateFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFieldComponent.swift; sourceTree = "<group>"; };
+		AE5E8DC02AB2F77A0036C263 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		AE5E8DC22AB2FBB50036C263 /* StaticImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticImage.swift; sourceTree = "<group>"; };
+		AE5E8DC42AB2FC630036C263 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		AE5E8DC62AB3287C0036C263 /* SalariesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalariesResponse.swift; sourceTree = "<group>"; };
+		AE5E8DC92AB344F10036C263 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEE519B62AB1DE2C0013097B /* EMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE519B92AB1DE2D0013097B /* EMSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMSApp.swift; sourceTree = "<group>"; };
 		AEE519BB2AB1DE2D0013097B /* EmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeView.swift; sourceTree = "<group>"; };
@@ -60,6 +74,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE5E8DBC2AB2F6A60036C263 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E8DBD2AB2F6BC0036C263 /* DateFieldComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AE5E8DBF2AB2F76D0036C263 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E8DC02AB2F77A0036C263 /* StringExtension.swift */,
+				AE5E8DC42AB2FC630036C263 /* ArrayExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE5E8DC82AB342AE0036C263 /* PersistantStorage */ = {
+			isa = PBXGroup;
+			children = (
+				AEE519EB2AB23CF30013097B /* EmployeeContainer.xcdatamodeld */,
+			);
+			path = PersistantStorage;
+			sourceTree = "<group>";
+		};
 		AEE519AD2AB1DE2C0013097B = {
 			isa = PBXGroup;
 			children = (
@@ -79,15 +118,14 @@
 		AEE519B82AB1DE2C0013097B /* EMS */ = {
 			isa = PBXGroup;
 			children = (
-				AEE519CA2AB1DF720013097B /* Resources */,
 				AEE519C92AB1DF680013097B /* Features */,
 				AEE519C82AB1DF600013097B /* Base */,
 				AEE519B92AB1DE2D0013097B /* EMSApp.swift */,
+				AE5E8DC92AB344F10036C263 /* LaunchScreen.storyboard */,
 				AEE519BD2AB1DE2E0013097B /* Assets.xcassets */,
 				AEE519BF2AB1DE2E0013097B /* EMS.entitlements */,
 				AEE519D62AB1E11D0013097B /* Info.plist */,
 				AEE519C02AB1DE2E0013097B /* Preview Content */,
-				AEE519EB2AB23CF30013097B /* EmployeeContainer.xcdatamodeld */,
 			);
 			path = EMS;
 			sourceTree = "<group>";
@@ -105,6 +143,10 @@
 			children = (
 				AEE519DE2AB1E3600013097B /* Models */,
 				AEE519CD2AB1DFB40013097B /* Network */,
+				AE5E8DC82AB342AE0036C263 /* PersistantStorage */,
+				AE5E8DBC2AB2F6A60036C263 /* Components */,
+				AE5E8DBF2AB2F76D0036C263 /* Extensions */,
+				AEE519CA2AB1DF720013097B /* Resources */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -121,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				AEE519CB2AB1DF860013097B /* StaticText.swift */,
+				AE5E8DC22AB2FBB50036C263 /* StaticImage.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -152,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				AEE519DC2AB1E2BC0013097B /* EmployeesResponse.swift */,
+				AE5E8DC62AB3287C0036C263 /* SalariesResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +205,7 @@
 			children = (
 				AEE519BB2AB1DE2D0013097B /* EmployeeView.swift */,
 				AEE519E92AB1ECE20013097B /* EmployeeDetailsView.swift */,
+				AE5E8DBA2AB2D0220036C263 /* EmployeeFilterSheet.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5E8DCA2AB344F10036C263 /* LaunchScreen.storyboard in Resources */,
 				AEE519C22AB1DE2E0013097B /* Preview Assets.xcassets in Resources */,
 				AEE519BE2AB1DE2E0013097B /* Assets.xcassets in Resources */,
 			);
@@ -263,18 +309,24 @@
 				AEE519E02AB1E3930013097B /* APIState.swift in Sources */,
 				AEE519E62AB1E42B0013097B /* EmployeeService.swift in Sources */,
 				AEE519DD2AB1E2BC0013097B /* EmployeesResponse.swift in Sources */,
+				AE5E8DBB2AB2D0220036C263 /* EmployeeFilterSheet.swift in Sources */,
 				AEE519ED2AB23CF30013097B /* EmployeeContainer.xcdatamodeld in Sources */,
 				AEE519CC2AB1DF860013097B /* StaticText.swift in Sources */,
 				AEE519D52AB1E0840013097B /* APIConstants.swift in Sources */,
+				AE5E8DBE2AB2F6BC0036C263 /* DateFieldComponent.swift in Sources */,
 				AEE519E82AB1E43D0013097B /* EmployeeViewModel.swift in Sources */,
+				AE5E8DC72AB3287C0036C263 /* SalariesResponse.swift in Sources */,
+				AE5E8DC32AB2FBB50036C263 /* StaticImage.swift in Sources */,
 				AEE519E42AB1E3E00013097B /* ErrorResult.swift in Sources */,
 				AEE519D12AB1E0260013097B /* APIMethods.swift in Sources */,
 				AEE519CF2AB1DFE20013097B /* RestAPIClient.swift in Sources */,
 				AEE519BC2AB1DE2D0013097B /* EmployeeView.swift in Sources */,
 				AEE519BA2AB1DE2D0013097B /* EMSApp.swift in Sources */,
+				AE5E8DC12AB2F77A0036C263 /* StringExtension.swift in Sources */,
 				AEE519E22AB1E3C50013097B /* Handler.swift in Sources */,
 				AEE519D32AB1E0460013097B /* APIError.swift in Sources */,
 				AEE519EA2AB1ECE20013097B /* EmployeeDetailsView.swift in Sources */,
+				AE5E8DC52AB2FC630036C263 /* ArrayExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +462,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
@@ -451,6 +504,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;

@@ -4,10 +4,10 @@
 <dict>
 	<key>BaseUrl</key>
 	<dict>
-		<key>API_SCHEME</key>
-		<string>https</string>
 		<key>API_BASE_URL</key>
 		<string>api-ems-w22t.onrender.com</string>
+		<key>API_SCHEME</key>
+		<string>https</string>
 	</dict>
 </dict>
 </plist>

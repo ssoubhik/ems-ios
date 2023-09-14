@@ -11,6 +11,7 @@ import Foundation
 
 protocol EmployeeService {
     func fetchEmployees() async throws -> EmployeesResponse
+    func fetchEmployeeSalary(empNo: String) async throws -> SalariesResponse
 }
 
 // MARK: - Employee Service Implementation
@@ -21,6 +22,19 @@ final class EmployeeServiceImpl: EmployeeService, RestAPIClient {
         return try await callAPI(
             path: StaticUrl.employeesPath,
             method: .get
+        )
+    }
+    
+    // Method: fetch employee salary
+    func fetchEmployeeSalary(empNo: String) async throws -> SalariesResponse {
+        let queryItems = [
+            URLQueryItem(name: StaticUrl.empNo, value: empNo)
+        ]
+        
+        return try await callAPI(
+            path: StaticUrl.salariesPath,
+            method: .get,
+            queryItems: queryItems
         )
     }
 }

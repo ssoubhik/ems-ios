@@ -45,20 +45,12 @@ extension RestAPIClient {
         // get data & response
         let (data, _) = try await session.data(for: urlRequest)
 
-        if let stringData = String(data: data, encoding: .utf8) {
-            print("\(path) stringData 🟢🔴", stringData)
-        }
-
         // setup decoder
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         
         // decode data
         guard let decodedData = try? decoder.decode(T.self, from: data) else {
-            if let stringData = String(data: data, encoding: .utf8), (stringData.contains("Invalid Token") || stringData.contains("Unauthorized")) {
-                throw APIError.invalidToken
-            }
-            
             throw APIError.failedToDecode
         }
         
