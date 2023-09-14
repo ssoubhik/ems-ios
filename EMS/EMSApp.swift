@@ -11,7 +11,10 @@ import SwiftUI
 struct EMSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                EmployeeView()
+            }
+            .navigationViewStyle(.stack)
         }
     }
 }
