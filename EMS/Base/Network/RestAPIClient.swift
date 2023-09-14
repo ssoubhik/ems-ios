@@ -22,6 +22,7 @@ extension RestAPIClient {
         var components = URLComponents()
         components.scheme = BaseUrl.apiScheme
         components.host = BaseUrl.apiBaseUrl
+        components.port = Int(BaseUrl.apiPort)
         components.path = path
         components.queryItems = queryItems
 
